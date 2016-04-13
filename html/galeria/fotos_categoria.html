@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Galeria Categorias</title>
+<link href="../Styles/Apricot/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<table cellspacing="0" align="left" border="0">
+  <tr>
+    <td>{Header}</td>
+  </tr>
+ 
+  <tr>
+    <td>
+      <!-- BEGIN Record galeria_categorias -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td> 
+                  <th>Agregar/Editar Categorias </th>
+ 
+                  <td class="HeaderRight"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="2">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>Categoria</th>
+ 
+                  <td><input maxlength="45" size="45" value="{Categoria}" name="{Categoria_Name}"></td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="2">
+                    <!-- BEGIN Button Button_Insert --><input type="image" src="../Styles/Apricot/Images/es/ButtonInsert.gif" value="Agregar" border="0" name="{Button_Name}"><!-- END Button Button_Insert -->
+                    <!-- BEGIN Button Button_Update --><input type="image" src="../Styles/Apricot/Images/es/ButtonUpdate.gif" value="Enviar" border="0" name="{Button_Name}"><!-- END Button Button_Update -->
+                    <!-- BEGIN Button Button_Delete --><input type="image" src="../Styles/Apricot/Images/es/ButtonDelete.gif" value="Borrar" border="0" name="{Button_Name}"><!-- END Button Button_Delete --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      &nbsp;<!-- END Record galeria_categorias --></td>
+  </tr>
+ 
+  <tr>
+    <td>{Footer}</td>
+  </tr>
+</table>
+</body>
+</html>

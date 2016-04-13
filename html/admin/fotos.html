@@ -1,0 +1,203 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Galeria Fotos</title>
+<link href="../Styles/Apricot/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<table cellspacing="0" align="left" border="0">
+  <tr>
+    <td>{Header}</td>
+  </tr>
+ 
+  <tr>
+    <td>&nbsp; 
+      <!-- BEGIN Record galeria_fotosSearch -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td>
+ 
+                  <th>Buscar Fotos</th>
+ 
+                  <td class="HeaderRight"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="6">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>Título</th>
+ 
+                  <td><input id="galeria_fotosSearchs_Titulo" maxlength="40" value="{s_Titulo}" name="{s_Titulo_Name}"></td>
+ 
+                  <th>Galeria</th>
+ 
+                  <td>
+                    <select id="galeria_fotosSearchs_Galeria" name="{s_Galeria_Name}">
+                      <option value="" selected>Seleccionar Valor</option>
+                      {s_Galeria_Options}
+                    </select>
+ </td>
+ 
+                  <th>Categorias</th>
+ 
+                  <td>
+                    <select id="galeria_fotosSearchs_Categorias" name="{s_Categorias_Name}">
+                      <option value="" selected>Seleccionar Valor</option>
+                      {s_Categorias_Options}
+                    </select>
+ </td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td><a href="{ClearParameters_Src}" id="galeria_fotosSearchClearParameters">Limpiar</a> </td>
+ 
+                  <td align="right" colspan="5">
+                    <!-- BEGIN Button Button_DoSearch --><input id="galeria_fotosSearchButton_DoSearch" type="image" src="../Styles/Apricot/Images/es/ButtonSearch.gif" value="Buscar" border="0" name="{Button_Name}">
+                    <!-- END Button Button_DoSearch -->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      &nbsp;
+      <!-- END Record galeria_fotosSearch -->
+    </td>
+  </tr>
+ 
+  <tr>
+    <td>
+      <!-- BEGIN Grid galeria_fotos -->
+      <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td>
+ 
+                <th>Fotos</th>
+ 
+                <td class="HeaderRight"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Caption">
+                <th>
+                  <!-- BEGIN Sorter Sorter_id --><a href="{Sort_URL}" id="galeria_fotosSorter_id">Id</a>&nbsp;
+                  <!-- END Sorter Sorter_id -->
+                </th>
+ 
+                <th>&nbsp; 
+                  <!-- BEGIN Sorter Sorter_Foto1 --><a href="{Sort_URL}" id="galeria_fotosSorter_Foto1">Imagen</a>
+                  <!-- END Sorter Sorter_Foto1 -->
+                  &nbsp;</th>
+ 
+                <th>
+                  <!-- BEGIN Sorter Sorter_Foto --><a href="{Sort_URL}" id="galeria_fotosSorter_Foto">Foto</a>&nbsp;
+                  <!-- END Sorter Sorter_Foto -->
+                </th>
+ 
+                <th>&nbsp;Orden</th>
+ 
+                <th>
+                  <!-- BEGIN Sorter Sorter_Titulo --><a href="{Sort_URL}" id="galeria_fotosSorter_Titulo">Titulo</a>&nbsp;
+                  <!-- END Sorter Sorter_Titulo -->
+                </th>
+ 
+                <th>
+                  <!-- BEGIN Sorter Sorter_Galeria --><a href="{Sort_URL}" id="galeria_fotosSorter_Galeria">Galeria</a>&nbsp;
+                  <!-- END Sorter Sorter_Galeria -->
+                </th>
+ 
+                <th>
+                  <!-- BEGIN Sorter Sorter_Categorias --><a href="{Sort_URL}" id="galeria_fotosSorter_Categorias">Categorias</a>&nbsp;
+                  <!-- END Sorter Sorter_Categorias -->
+                </th>
+ 
+                <th>
+                  <!-- BEGIN Sorter Sorter_Fecha --><a href="{Sort_URL}" id="galeria_fotosSorter_Fecha">Fecha</a>&nbsp;
+                  <!-- END Sorter Sorter_Fecha -->
+                </th>
+ 
+                <th>
+                  <!-- BEGIN Sorter Sorter_Publicar --><a href="{Sort_URL}" id="galeria_fotosSorter_Publicar">Publicar</a>&nbsp;
+                  <!-- END Sorter Sorter_Publicar -->
+                </th>
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr class="Row">
+                <td style="TEXT-ALIGN: right"><a href="{id_Src}" id="galeria_fotosid">{id}</a>&nbsp;</td>
+ 
+                <td><img id="galeria_fotosFoto1" height="75" src="../galeria/fotos/{Foto1}" width="100">&nbsp;</td>
+ 
+                <td>{Foto}&nbsp;</td>
+ 
+                <td>{Orden}</td>
+ 
+                <td>{Titulo}&nbsp;</td>
+ 
+                <td>{Galeria}&nbsp;</td>
+ 
+                <td>{Categorias}&nbsp;</td>
+ 
+                <td>{Fecha}&nbsp;</td>
+ 
+                <td style="TEXT-ALIGN: right"><input id="galeria_fotosPublicar" type="checkbox" value="1" name="{Publicar_Name}" {Publicar}>&nbsp;</td>
+              </tr>
+ 
+              <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="9">No hay registros</td>
+              </tr>
+              <!-- END NoRecords -->
+              <tr class="Footer">
+                <td colspan="9"><a href="{galeria_fotos_Insert_Src}" id="galeria_fotosgaleria_fotos_Insert">Agregar Nuevo</a>&nbsp; 
+                  <!-- BEGIN Navigator Navigator -->
+                  <!-- BEGIN First_On --><a href="{First_URL}"><img src="../Styles/Apricot/Images/es/ButtonFirst.gif" border="0"></a> 
+                  <!-- END First_On -->
+                  <!-- BEGIN First_Off --><img src="../Styles/Apricot/Images/es/ButtonFirstOff.gif" border="0">
+                  <!-- END First_Off -->
+                  <!-- BEGIN Prev_On --><a href="{Prev_URL}"><img src="../Styles/Apricot/Images/es/ButtonPrev.gif" border="0"></a> 
+                  <!-- END Prev_On -->
+                  <!-- BEGIN Prev_Off --><img src="../Styles/Apricot/Images/es/ButtonPrevOff.gif" border="0">
+                  <!-- END Prev_Off -->
+                  &nbsp;{Page_Number}&nbsp;de&nbsp;{Total_Pages}&nbsp; 
+                  <!-- BEGIN Next_On --><a href="{Next_URL}"><img src="../Styles/Apricot/Images/es/ButtonNext.gif" border="0"></a> 
+                  <!-- END Next_On -->
+                  <!-- BEGIN Next_Off --><img src="../Styles/Apricot/Images/es/ButtonNextOff.gif" border="0">
+                  <!-- END Next_Off -->
+                  <!-- BEGIN Last_On --><a href="{Last_URL}"><img src="../Styles/Apricot/Images/es/ButtonLast.gif" border="0"></a> 
+                  <!-- END Last_On -->
+                  <!-- BEGIN Last_Off --><img src="../Styles/Apricot/Images/es/ButtonLastOff.gif" border="0">
+                  <!-- END Last_Off -->
+                  <!-- END Navigator Navigator -->
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      &nbsp;
+      <!-- END Grid galeria_fotos -->
+    </td>
+  </tr>
+ 
+  <tr>
+    <td>{Footer}</td>
+  </tr>
+</table>
+</body>
+</html>

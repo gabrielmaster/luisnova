@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Luis Nova</title>
+<link href="../Styles/Apricot/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+{Header} 
+<!-- BEGIN Record Login -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td> 
+            <th>Login</th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>Login</th>
+ 
+            <td><input maxlength="100" value="{login}" name="{login_Name}" size="20" id="Loginlogin"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>Password</th>
+ 
+            <td><input type="password" maxlength="100" value="{password}" name="{password_Name}" size="20" id="Loginpassword"></td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_DoLogin --><input class="Button" type="submit" value="Login" name="{Button_Name}" id="LoginButton_DoLogin"><!-- END Button Button_DoLogin --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record Login -->{Footer} 
+</body>
+</html>

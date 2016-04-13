@@ -1,0 +1,138 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Usuarios</title>
+<meta content="CodeCharge Studio 3.1.1.0" name="GENERATOR">
+<link href="../Styles/Apricot/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include Common JSFunctions @1-59723538
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" src="../ClientI18N.php?file=DatePicker.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-606EF24C
+
+var usuarios_DatePicker_FechaRegistro = new Object(); 
+usuarios_DatePicker_FechaRegistro.format           = "GeneralDate";
+usuarios_DatePicker_FechaRegistro.style            = "Styles/Apricot/Style.css";
+usuarios_DatePicker_FechaRegistro.relativePathPart = "../";
+usuarios_DatePicker_FechaRegistro.themeVersion = "3.0";
+
+//End Date Picker Object Definitions
+
+//usuariosButton_Delete_OnClick @5-3A5DF7FE
+function usuariosButton_Delete_OnClick()
+{
+    disableValidation = true;
+}
+//End usuariosButton_Delete_OnClick
+
+//bind_events @1-F64DE64D
+function bind_events() {
+    if (functionExists("Header_bind_events")) Header_bind_events();
+    if (functionExists("Footer_bind_events")) Footer_bind_events();
+    addEventHandler("usuariosButton_Delete", "click", usuariosButton_Delete_OnClick);
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+</head>
+<body>
+{Header} 
+<!-- BEGIN Record usuarios -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td> 
+            <th>Agregar/Editar Usuarios</th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>Login</th>
+ 
+            <td><input maxlength="25" size="25" value="{Login}" name="{Login_Name}" id="usuariosLogin"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>Password</th>
+ 
+            <td><input type="password" maxlength="100" size="25" value="{Password}" name="{Password_Name}" id="usuariosPassword"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>Nivel</th>
+ 
+            <td>
+              <select name="{Nivel_Name}" id="usuariosNivel">
+                <option value="" selected>Seleccione</option>
+                <option value="15">Administrador&nbsp;Galeria</option>
+                <option value="95">Administrador&nbsp;del&nbsp;WebSite</option>
+                {Nivel_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>Nombre Completo</th>
+ 
+            <td><input maxlength="40" size="40" value="{NombreCompleto}" name="{NombreCompleto_Name}" id="usuariosNombreCompleto"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>EMail</th>
+ 
+            <td><input maxlength="100" size="40" value="{EMail}" name="{EMail_Name}" id="usuariosEMail"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>Fecha Registro</th>
+ 
+            <td><input maxlength="100" value="{FechaRegistro}" name="{FechaRegistro_Name}" id="usuariosFechaRegistro">
+              <!-- BEGIN DatePicker DatePicker_FechaRegistro --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');" id="usuariosDatePicker_FechaRegistro"><img src="../Styles/Apricot/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_FechaRegistro --></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>Ultimo Acceso</th>
+ 
+            <td><input maxlength="100" value="{UltimoAcceso}" name="{UltimoAcceso_Name}" id="usuariosUltimoAcceso"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>Habilitado</th>
+ 
+            <td><input type="checkbox" value="1" name="{Habilitado_Name}" {Habilitado} id="usuariosHabilitado"></td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_Insert --><input type="image" src="../Styles/Apricot/Images/es/ButtonInsert.gif" value="Agregar" border="0" name="{Button_Name}" id="usuariosButton_Insert"><!-- END Button Button_Insert -->
+              <!-- BEGIN Button Button_Update --><input type="image" src="../Styles/Apricot/Images/es/ButtonUpdate.gif" value="Enviar" border="0" name="{Button_Name}" id="usuariosButton_Update"><!-- END Button Button_Update -->
+              <!-- BEGIN Button Button_Delete --><input type="image" src="../Styles/Apricot/Images/es/ButtonDelete.gif" value="Borrar" border="0" name="{Button_Name}" id="usuariosButton_Delete"><!-- END Button Button_Delete --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record usuarios --><br>
+{Footer} 
+</body>
+</html>

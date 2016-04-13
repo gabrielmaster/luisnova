@@ -1,0 +1,90 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Galeria Categorias</title>
+<link href="../Styles/Apricot/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<table cellspacing="0" align="left" border="0">
+  <tr>
+    <td>{Header}</td>
+  </tr>
+ 
+  <tr>
+    <td>
+      <!-- BEGIN Grid galeria_categorias -->
+      <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td> 
+                <th>Categorias</th>
+ 
+                <td class="HeaderRight"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Caption">
+                <th>
+                <!-- BEGIN Sorter Sorter_id --><a href="{Sort_URL}" id="galeria_categoriasSorter_id">Id</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Apricot/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Apricot/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_id --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_Categoria --><a href="{Sort_URL}" id="galeria_categoriasSorter_Categoria">Categoria</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Apricot/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Apricot/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Categoria --></th>
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr class="Row">
+                <td style="TEXT-ALIGN: right"><a href="{id_Src}" id="galeria_categoriasid">{id}</a></td> 
+                <td>{Categoria}&nbsp;</td>
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="2">No hay registros</td>
+              </tr>
+              <!-- END NoRecords -->
+              <tr class="Footer">
+                <td colspan="2"><a href="{galeria_categorias_Insert_Src}" id="galeria_categoriasgaleria_categorias_Insert">Agregar Nuevo</a> 
+                  
+
+<!-- BEGIN Navigator Navigator -->
+<!-- BEGIN First_On --><a href="{First_URL}"><img border="0" src="../Styles/Apricot/Images/es/ButtonFirst.gif"></a> 
+<!-- END First_On -->
+<!-- BEGIN First_Off --><img border="0" src="../Styles/Apricot/Images/es/ButtonFirstOff.gif">
+<!-- END First_Off -->
+<!-- BEGIN Prev_On --><a href="{Prev_URL}"><img border="0" src="../Styles/Apricot/Images/es/ButtonPrev.gif"></a> 
+<!-- END Prev_On -->
+<!-- BEGIN Prev_Off --><img border="0" src="../Styles/Apricot/Images/es/ButtonPrevOff.gif">
+<!-- END Prev_Off -->
+&nbsp;{Page_Number}&nbsp;de&nbsp;{Total_Pages}&nbsp; 
+<!-- BEGIN Next_On --><a href="{Next_URL}"><img border="0" src="../Styles/Apricot/Images/es/ButtonNext.gif"></a> 
+<!-- END Next_On -->
+<!-- BEGIN Next_Off --><img border="0" src="../Styles/Apricot/Images/es/ButtonNextOff.gif">
+<!-- END Next_Off -->
+<!-- BEGIN Last_On --><a href="{Last_URL}"><img border="0" src="../Styles/Apricot/Images/es/ButtonLast.gif"></a> 
+<!-- END Last_On -->
+<!-- BEGIN Last_Off --><img border="0" src="../Styles/Apricot/Images/es/ButtonLastOff.gif">
+<!-- END Last_Off -->
+<!-- END Navigator Navigator -->
+
+</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!-- END Grid galeria_categorias --></td>
+  </tr>
+ 
+  <tr>
+    <td>{Footer}</td>
+  </tr>
+</table>
+</body>
+</html>

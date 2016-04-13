@@ -1,0 +1,70 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Galeria Categorias</title>
+<link href="../Styles/Apricot/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<table cellspacing="0" align="left" border="0">
+  <tr>
+    <td>{Header}</td>
+  </tr>
+ 
+  <tr>
+    <td>
+      <!-- BEGIN Grid galeria_categorias -->
+      <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td> 
+                <th>Categorias</th>
+ 
+                <td class="HeaderRight"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Caption">
+                <th>
+                <!-- BEGIN Sorter Sorter_id --><a href="{Sort_URL}">Id</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Apricot/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Apricot/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_id --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_Categoria --><a href="{Sort_URL}">Categoria</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Apricot/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Apricot/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Categoria --></th>
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr class="Row">
+                <td style="TEXT-ALIGN: right"><a href="{id_Src}">{id}</a></td> 
+                <td>{Categoria}&nbsp;</td>
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="2">No hay registros</td>
+              </tr>
+              <!-- END NoRecords -->
+              <tr class="Footer">
+                <td colspan="2"><a href="{galeria_categorias_Insert_Src}">Agregar Nuevo</a> 
+                  <!-- BEGIN Navigator Navigator -->
+                  <!-- BEGIN Prev_On --><a href="{Prev_URL}"><img src="../Styles/Apricot/Images/es/ButtonPrev.gif" border="0"></a> <!-- END Prev_On -->
+                  <!-- BEGIN Next_On --><a href="{Next_URL}"><img src="../Styles/Apricot/Images/es/ButtonNext.gif" border="0"></a> <!-- END Next_On --><!-- END Navigator Navigator --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!-- END Grid galeria_categorias --></td>
+  </tr>
+ 
+  <tr>
+    <td>{Footer}</td>
+  </tr>
+</table>
+</body>
+</html>

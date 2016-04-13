@@ -1,0 +1,139 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Galeria Galerias</title>
+<link href="../Styles/Apricot/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include Common JSFunctions @1-59723538
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" src="../ClientI18N.php?file=DatePicker.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-E3E3C382
+
+var galeria_galerias_DatePicker_Fecha = new Object(); 
+galeria_galerias_DatePicker_Fecha.format           = "GeneralDate";
+galeria_galerias_DatePicker_Fecha.style            = "Styles/Apricot/Style.css";
+galeria_galerias_DatePicker_Fecha.relativePathPart = "../";
+galeria_galerias_DatePicker_Fecha.themeVersion = "3.0";
+
+//End Date Picker Object Definitions
+
+//galeria_galeriasButton_Delete_OnClick @5-08148F0D
+function galeria_galeriasButton_Delete_OnClick()
+{
+    disableValidation = true;
+}
+//End galeria_galeriasButton_Delete_OnClick
+
+//bind_events @1-40B361FD
+function bind_events() {
+    if (functionExists("Header_bind_events")) Header_bind_events();
+    if (functionExists("Footer_bind_events")) Footer_bind_events();
+    addEventHandler("galeria_galeriasButton_Delete", "click", galeria_galeriasButton_Delete_OnClick);
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+</head>
+<body>
+<table cellspacing="0" align="left" border="0">
+  <tr>
+    <td>{Header}</td>
+  </tr>
+ 
+  <tr>
+    <td>
+      <!-- BEGIN Record galeria_galerias -->
+      <form name="{HTMLFormName}" action="{Action}" method="post" enctype="{HTMLFormEnctype}">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td> 
+                  <th>Agregar/Editar Galeria </th>
+ 
+                  <td class="HeaderRight"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="2">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>Galeria</th>
+ 
+                  <td><input maxlength="40" size="40" value="{Galeria}" name="{Galeria_Name}" id="galeria_galeriasGaleria"></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>Imagen</th>
+ 
+                  <td>
+                    <!-- BEGIN FileUpload FileUpload1 --><input type="hidden" value="{State}" name="{ControlName}" id="galeria_galeriasFileUpload1ControlName">
+                    <!-- BEGIN Info -->&nbsp;{FileName}&nbsp;{FileSize}&nbsp;bytes. <!-- END Info -->
+                    <!-- BEGIN Upload --><input type="file" name="{FileControl}"><!-- END Upload -->
+                    <!-- BEGIN DeleteControl -->Borrar <input type="checkbox" name="{DeleteControl}" {DeleteChecked}>&nbsp;<!-- END DeleteControl --><!-- END FileUpload FileUpload1 --></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>Ruta Fotos</th>
+ 
+                  <td><input maxlength="200" size="50" value="{RutaFotos}" name="{RutaFotos_Name}" id="galeria_galeriasRutaFotos"></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>Descripcion</th>
+ 
+                  <td><input maxlength="100" size="50" value="{Descripcion}" name="{Descripcion_Name}" id="galeria_galeriasDescripcion"></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>Publicado</th>
+ 
+                  <td><input type="checkbox" value="1" name="{Publicado_Name}" {Publicado} id="galeria_galeriasPublicado"></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>Fecha</th>
+ 
+                  <td><input maxlength="100" size="8" value="{Fecha}" name="{Fecha_Name}" id="galeria_galeriasFecha">
+                    <!-- BEGIN DatePicker DatePicker_Fecha --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');" id="galeria_galeriasDatePicker_Fecha"><img src="../Styles/Apricot/Images/DatePicker.gif" border="0"></a>&nbsp;<!-- END DatePicker DatePicker_Fecha --></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>Orden</th>
+ 
+                  <td><input maxlength="4" size="4" value="{Orden}" name="{Orden_Name}" id="galeria_galeriasOrden"></td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="2">
+                    <!-- BEGIN Button Button_Insert --><input type="image" src="../Styles/Apricot/Images/es/ButtonInsert.gif" value="Agregar" border="0" name="{Button_Name}" id="galeria_galeriasButton_Insert"><!-- END Button Button_Insert -->
+                    <!-- BEGIN Button Button_Update --><input type="image" src="../Styles/Apricot/Images/es/ButtonUpdate.gif" value="Enviar" border="0" name="{Button_Name}" id="galeria_galeriasButton_Update"><!-- END Button Button_Update -->
+                    <!-- BEGIN Button Button_Delete --><input type="image" src="../Styles/Apricot/Images/es/ButtonDelete.gif" value="Borrar" border="0" name="{Button_Name}" id="galeria_galeriasButton_Delete"><!-- END Button Button_Delete --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      &nbsp;<!-- END Record galeria_galerias --></td>
+  </tr>
+ 
+  <tr>
+    <td>{Footer}</td>
+  </tr>
+</table>
+</body>
+</html>

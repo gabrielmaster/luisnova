@@ -1,0 +1,135 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Luis Nova - Fotografia Profesional - Santo Domingo, República Dominicana</title>
+<style type="text/css">
+<!--
+.bgtop   { background-image: url(images/lnlay_01.gif); background-position: left bottom; background-attachment: scroll; background-repeat: repeat-x; background-color: 7c7c7c; }
+.bgcenter   { background-image: url(images/culinaria_06.gif); background-position: left; background-repeat: repeat-x; }
+.bgbot1   { background-image: url(images/lnlay_03.gif); background-repeat: repeat-x; background-position: left top; background-color: 7c7c7c; }
+.bgbot2   { background-repeat: repeat; background-position: left center; background-attachment: fixed; background-color: #7c7c7c; }
+-->
+</style>
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<meta name="keywords" content="fotografia, santo domingo, dominicana, republica dominicana, luis, nova, luis nova, vib, vib interactiva, softnet">
+<meta name="description" content="Luis Nova - Fotógrafo. República Dominicana">
+</head>
+<body bgcolor="#7c7c7c" leftmargin="0" topmargin="0" scroll="no" marginwidth="00" marginheight="00">
+<table class="bgbot2" height="100%" cellspacing="0" cellpadding="0" width="100%" border="0">
+  <tr>
+    <td class="bgtop" valign="bottom" height="25">
+      <p>
+      <div id="categoriavar" style="DISPLAY: none">
+        <!-- BEGIN Record NewRecord1 -->
+        <form name="{HTMLFormName}" action="{Action}" method="post">
+          <input size="5" value="{CatURL}" name="{CatURL_Name}"><input size="5" value="{PaginaNo}" name="{PaginaNo_Name}">
+        </form>
+ <!-- END Record NewRecord1 -->
+      </div>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top" align="left" bgcolor="#ffffff" height="425">
+      <table height="425" cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tr>
+          <td><iframe name="mainframe" marginwidth="0" marginheight="0" src="galeria_luisnova.php?categoria={CatURL}&galeria_fotosPage={PaginaNo}" frameborder="0" width="100%" height="425" target="mainframe"></iframe></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td class="bgbot1" valign="top">
+      <table height="100%" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+        <tr>
+          <td class="bgbot1" height="15">
+            <table width="100%" border="0">
+              <tr>
+                <td>
+                  <!-- BEGIN Grid galeria_fotos -->
+                  <div id="ocultargaleria" style="DISPLAY: none">
+                    <table cellspacing="0" border="0">
+                      <!-- BEGIN Row -->
+                      <!-- BEGIN Panel RowOpenTag -->
+                      <tr>
+                        <!-- END Panel RowOpenTag -->
+                        <td>
+                          <!-- BEGIN Panel RowComponents --><img height="{Foto:height}" alt="{Titulo}" src="galeria/fotos/{Foto}"><!-- END Panel RowComponents --></td> 
+                        <!-- BEGIN Panel RowCloseTag -->
+                      </tr>
+ <!-- END Panel RowCloseTag --><!-- END Row -->
+                      <!-- BEGIN NoRecords -->
+                      <tr>
+                        <td colspan="{galeria_fotos:numberOfColumns}">No hay registros </td> 
+                      </tr>
+ <!-- END NoRecords -->
+                      <tr>
+                        <td colspan="{galeria_fotos:numberOfColumns}"></td> 
+                      </tr>
+ 
+                    </table>
+ 
+                  </div>
+ 
+                  <div>
+                    <div id="piedepagina" style="WIDTH: 100%; HEIGHT: 21px">
+                      <div>
+                        <table width="600" align="center" border="0">
+                          <tr>
+                            <td>
+                              <!-- BEGIN Navigator Navigator -->
+                              <p align="center">
+                              <!-- BEGIN Prev_On --><a href="{Prev_URL}">Anterior</a>&nbsp;<!-- END Prev_On -->
+                              <!-- BEGIN Pages -->
+                              <!-- BEGIN Page_On --><a href="{Page_URL}">Página {Page_Number}</a>&nbsp;<!-- END Page_On -->
+                              <!-- BEGIN Page_Off -->Página {Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->de&nbsp;{Total_Pages}&nbsp; 
+                              <!-- BEGIN Next_On --><a href="{Next_URL}">Siguiente</a><!-- END Next_On -->&nbsp;<!-- END Navigator Navigator --></p>
+ </td> 
+                          </tr>
+ 
+                        </table>
+ 
+                      </div>
+ 
+                    </div>
+ 
+                  </div>
+ <!-- END Grid galeria_fotos --></td> 
+              </tr>
+ 
+            </table>
+ </td> 
+        </tr>
+ 
+        <tr valign="middle" align="center">
+          <td valign="top">
+            <script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','1180','height','115','title','Luis Nova - Menu','src','luisnova_menu','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','luisnova_menu' ); //end AC code
+</script>
+            <noscript>
+            <object title="Luis Nova - Menu" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="1180px" height="115px">
+              <param name="movie" value="luisnova_menu.swf">
+              <param name="quality" value="high">
+              <embed src="luisnova_menu.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="1180px" height="115px"></embed>
+ 
+            </object>
+ 
+            </noscript>
+ </td> 
+        </tr>
+ 
+        <tr>
+          <td valign="top" align="center" height="15"><img height="10" alt="" src="images/lnlay_06.gif" width="442" usemap="#Map" border="0"></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+</table>
+<map name="Map">
+<area shape="RECT" target="_blank" coords="365,2,441,10" href="http://www.vibinteractiva.com">
+</map>
+</body>
+</html>

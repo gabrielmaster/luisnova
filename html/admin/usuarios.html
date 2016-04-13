@@ -1,0 +1,162 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Usuarios</title>
+<meta content="CodeCharge Studio 3.1.1.0" name="GENERATOR">
+<link href="../Styles/Apricot/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+{Header} 
+<!-- BEGIN Record usuariosSearch -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td> 
+            <th>Buscar</th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>Login</th>
+ 
+            <td><input maxlength="25" size="25" value="{s_Login}" name="{s_Login_Name}" id="usuariosSearchs_Login"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>Nombre Completo</th>
+ 
+            <td><input maxlength="40" size="40" value="{s_NombreCompleto}" name="{s_NombreCompleto_Name}" id="usuariosSearchs_NombreCompleto"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>EMail</th>
+ 
+            <td><input maxlength="100" size="40" value="{s_EMail}" name="{s_EMail_Name}" id="usuariosSearchs_EMail"></td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_DoSearch --><input type="image" src="../Styles/Apricot/Images/es/ButtonSearch.gif" value="Buscar" border="0" name="{Button_Name}" id="usuariosSearchButton_DoSearch"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record usuariosSearch --><br>
+<!-- BEGIN Grid usuarios -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td> 
+          <th>Usuarios</th>
+ 
+          <td class="HeaderRight"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td>
+        </tr>
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <tr class="Caption">
+          <th>
+          <!-- BEGIN Sorter Sorter_id --><a href="{Sort_URL}" id="usuariosSorter_id">Id</a> 
+          <!-- BEGIN Asc_On --><img src="../Styles/Apricot/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../Styles/Apricot/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_id --></th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_Login --><a href="{Sort_URL}" id="usuariosSorter_Login">Login</a> 
+          <!-- BEGIN Asc_On --><img src="../Styles/Apricot/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../Styles/Apricot/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Login --></th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_Nivel --><a href="{Sort_URL}" id="usuariosSorter_Nivel">Nivel</a> 
+          <!-- BEGIN Asc_On --><img src="../Styles/Apricot/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../Styles/Apricot/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Nivel --></th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_NombreCompleto --><a href="{Sort_URL}" id="usuariosSorter_NombreCompleto">Nombre Completo</a> 
+          <!-- BEGIN Asc_On --><img src="../Styles/Apricot/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../Styles/Apricot/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_NombreCompleto --></th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_EMail --><a href="{Sort_URL}" id="usuariosSorter_EMail">EMail</a> 
+          <!-- BEGIN Asc_On --><img src="../Styles/Apricot/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../Styles/Apricot/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_EMail --></th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_FechaRegistro --><a href="{Sort_URL}" id="usuariosSorter_FechaRegistro">Fecha Registro</a> 
+          <!-- BEGIN Asc_On --><img src="../Styles/Apricot/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../Styles/Apricot/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_FechaRegistro --></th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_UltimoAcceso --><a href="{Sort_URL}" id="usuariosSorter_UltimoAcceso">Ultimo Acceso</a> 
+          <!-- BEGIN Asc_On --><img src="../Styles/Apricot/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../Styles/Apricot/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_UltimoAcceso --></th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_Habilitado --><a href="{Sort_URL}" id="usuariosSorter_Habilitado">Habilitado</a> 
+          <!-- BEGIN Asc_On --><img src="../Styles/Apricot/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../Styles/Apricot/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Habilitado --></th>
+        </tr>
+ 
+        <!-- BEGIN Row -->
+        <tr class="Row">
+          <td style="TEXT-ALIGN: right"><a href="{id_Src}" id="usuariosid">{id}</a>&nbsp;</td> 
+          <td>{Login}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{Nivel}&nbsp;</td> 
+          <td>{NombreCompleto}&nbsp;</td> 
+          <td>{EMail}&nbsp;</td> 
+          <td>{FechaRegistro}&nbsp;</td> 
+          <td>{UltimoAcceso}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right"><input type="checkbox" value="1" name="{Habilitado_Name}" {Habilitado} id="usuariosHabilitado">&nbsp;</td>
+        </tr>
+ <!-- END Row -->
+        <!-- BEGIN NoRecords -->
+        <tr class="NoRecords">
+          <td colspan="8">No hay registros</td>
+        </tr>
+        <!-- END NoRecords -->
+        <tr class="Footer">
+          <td colspan="8"><a href="{usuarios_Insert_Src}" id="usuariosusuarios_Insert">Agregar Nuevo</a>&nbsp; 
+            
+<!-- BEGIN Navigator Navigator -->
+<!-- BEGIN First_On --><a href="{First_URL}"><img border="0" src="../Styles/Apricot/Images/es/ButtonFirst.gif"></a> 
+<!-- END First_On -->
+<!-- BEGIN First_Off --><img border="0" src="../Styles/Apricot/Images/es/ButtonFirstOff.gif">
+<!-- END First_Off -->
+<!-- BEGIN Prev_On --><a href="{Prev_URL}"><img border="0" src="../Styles/Apricot/Images/es/ButtonPrev.gif"></a> 
+<!-- END Prev_On -->
+<!-- BEGIN Prev_Off --><img border="0" src="../Styles/Apricot/Images/es/ButtonPrevOff.gif">
+<!-- END Prev_Off -->
+&nbsp;{Page_Number}&nbsp;de&nbsp;{Total_Pages}&nbsp; 
+<!-- BEGIN Next_On --><a href="{Next_URL}"><img border="0" src="../Styles/Apricot/Images/es/ButtonNext.gif"></a> 
+<!-- END Next_On -->
+<!-- BEGIN Next_Off --><img border="0" src="../Styles/Apricot/Images/es/ButtonNextOff.gif">
+<!-- END Next_Off -->
+<!-- BEGIN Last_On --><a href="{Last_URL}"><img border="0" src="../Styles/Apricot/Images/es/ButtonLast.gif"></a> 
+<!-- END Last_On -->
+<!-- BEGIN Last_Off --><img border="0" src="../Styles/Apricot/Images/es/ButtonLastOff.gif">
+<!-- END Last_Off -->
+<!-- END Navigator Navigator -->
+</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- END Grid usuarios --><br>
+{Footer} 
+</body>
+</html>
