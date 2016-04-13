@@ -1,0 +1,51 @@
+@charset "utf-8";
+body {
+	background:#404545;
+	margin:0;
+	}
+.franja {
+	background-image: url(images/imgsplash_07.gif);
+	background-repeat: repeat-y;
+	background-position: top;
+}
+.franvid {
+	background-image: url(images/franvid_02.gif);
+	background-repeat: repeat-x;
+	background-position: left;
+}
+.video {
+   border:-color: #404545;
+   border-width: 1px;
+   border-style: solid;
+}
+.firma{
+	text-transform:uppercase;
+	position:relative;
+	width:1080px;
+	text-align:center;
+	color:#FFF;
+	font-family:Tahoma;
+	font-size:10px;
+	margin:5px auto;
+	margin-top:5%;
+}
+.firma2{
+	text-transform:none;
+	position:relative;
+	width:1080px;
+	text-align:center;
+	color:#999999;
+	font-family:Tahoma;
+	font-size:10px;
+	margin:5px auto;
+	margin-top:5%;
+}
+.firma a{
+	color: #FFF;
+	text-decoration:none;
+}
+
+.firma a:hover{
+	color: #0099ff;
+	text-decoration:none;
+}
